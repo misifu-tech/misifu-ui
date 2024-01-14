@@ -1,0 +1,33 @@
+{
+  "name": "misifu-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misifu-tech/misifu-ui.git"
+  },
+  "author": "vishal",
+  "bugs": {
+    "url": "https://github.com/misifu-tech/misifu-ui/issues"
+  },
+  "homepage": "https://github.com/misifu-tech/misifu-ui#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
